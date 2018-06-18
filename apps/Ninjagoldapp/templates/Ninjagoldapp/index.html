@@ -35,7 +35,7 @@
             <small class="text-muted">
                 <form action="/process" method="POST">
                     {% csrf_token %}
-                    <input type="hidden" name="action" value="farm">
+                    <input type="hidden" name="action" value="cave">
                     <input  name="submit" type="submit" class="btn btn-primary">
                 </form>
             </small>
@@ -48,7 +48,7 @@
                 <small class="text-muted">
                     <form action="/process" method="POST">
                         {% csrf_token %}
-                        <input type="hidden" name="action" value="farm">
+                        <input type="hidden" name="action" value="house">
                         <input  name="submit" type="submit" class="btn btn-primary">
                     </form>
                 </small>
@@ -62,7 +62,7 @@
                     <small class="text-muted">
                         <form action="/process" method="POST">
                             {% csrf_token %}
-                            <input type="hidden" name="action" value="farm">
+                            <input type="hidden" name="action" value="casino">
                             <input  name="submit" type="submit" class="btn btn-primary">
                         </form>
                     </small>
@@ -86,7 +86,7 @@
         <div class="card-columns">
             <div class="card p-3">
                 <h4>Reset:</h4>
-                <form action="/reset" id="resetform" method="POST">
+                <form action="/clear" id="resetform" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="action" value="reset">
                     <input id="resetbutton" name="submit" type="submit" value="Reset Game">

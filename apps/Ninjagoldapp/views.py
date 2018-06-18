@@ -30,3 +30,7 @@ def process(request):
 		result['color'] = 'green'
 	request.session['activity_log'].append(result)
 	return redirect('/')
+
+def clear(request):
+    request.session.clear()
+    return redirect('/')
